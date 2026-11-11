@@ -1,0 +1,62 @@
+{
+    "name": "1994/captcha",
+    "description": "Turnstile, hCaptcha and reCAPTCHA (v2 and v3) behind one small interface, for 1994's Craft CMS plugins and Statamic addons. No framework, no dependencies.",
+    "type": "library",
+    "license": "MIT",
+    "homepage": "https://github.com/1994limited/captcha",
+    "keywords": [
+        "captcha",
+        "turnstile",
+        "hcaptcha",
+        "recaptcha",
+        "spam"
+    ],
+    "authors": [
+        {
+            "name": "1994",
+            "email": "hello@1994.co.uk",
+            "homepage": "https://1994.co.uk"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/1994limited/captcha/issues",
+        "source": "https://github.com/1994limited/captcha"
+    },
+    "require": {
+        "php": "^8.2",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.18",
+        "phpstan/phpstan": "^2.1",
+        "phpunit/phpunit": "^11.5|^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "NineteenNinetyFour\\Captcha\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "NineteenNinetyFour\\Captcha\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "lint": "pint --test",
+        "analyse": "phpstan analyse"
+    },
+    "config": {
+        "platform": {
+            "php": "8.2.0"
+        },
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "extra": {
+        "branch-alias": {
+            "dev-main": "1.x-dev"
+        }
+    }
+}
